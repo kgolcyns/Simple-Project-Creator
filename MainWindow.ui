@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DocumentCreationWidget</class>
+ <widget class="QWidget" name="DocumentCreationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Document Creation From Template</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListView" name="templateList"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="destinationFolder">
+       <property name="toolTip">
+        <string>Choose an existing directory to save the new project in.&lt;br /&gt;Click &lt;i&gt;Browse&lt;/i&gt; if you would like to specify a different location.</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string>Location</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="browseButton">
+       <property name="text">
+        <string>Browse...</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="nameLineEdit">
+     <property name="toolTip">
+      <string>Enter the name of your project.&lt;br /&gt;A new folder called &lt;i&gt;Name&lt;/i&gt; will be created in &lt;i&gt;Location&lt;/i&gt; with the following name.&lt;br /&gt;&lt;i&gt;Name&lt;/i&gt; must be a valid folder name that doesn't already exist inside &lt;i&gt;Location&lt;/i&gt;.</string>
+     </property>
+     <property name="placeholderText">
+      <string>Name</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="createButton">
+     <property name="text">
+      <string>Create Template</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
